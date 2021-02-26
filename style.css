@@ -5,9 +5,11 @@
     img {
         width: 40%;
     }
-    
-    p {
-        width: 70%;
+    div {
+        width: 80%;
+    }
+    div p {
+        width: 50%;
     }
 }
 
@@ -15,33 +17,24 @@
     body {
         width: 90%;
     }
-    img {
-        width: 40%;
-    }
-    
-    p {
-        width: 80%;
-    }
-
 }
 
-
-
-@media (min-width: 576px) and (max-width: 1199.98px) {
-  
+@media (min-width: 576px){ 
     img {
         width: 40%;
     }
-
+    div p {
+        width: 50%;
+    }
 }
 
 @media (max-width: 575.98px) {
-    
     img {
-        width: 50%;
+        width: 100%;
     }
-    
-
+    div p {
+        width: 100%;
+    }
 }
 
 body {
@@ -80,16 +73,10 @@ h1 {
 }
 div {
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 img {
     margin: 0% 5% 1% 0%;
     float: left;
-}
-
-p {
-    padding: 0% 5%;
-    margin: 0 auto;
-}
-p + p {
-    margin-top: 10%;
 }
