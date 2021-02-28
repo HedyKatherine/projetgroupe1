@@ -1,0 +1,14 @@
+@import 'header.css';
+@import 'footer.css';
+
+/*Pour une meilleure visibilité : largeur suggérée.*/
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*Pour une meilleure visibilité : hauteur temporaire 
+qui sera supprimée après remplissage de la zone.*/
+main {
+    height: 500px;
+}
