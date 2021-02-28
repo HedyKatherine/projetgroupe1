@@ -1,0 +1,14 @@
+#banner_history {
+    height: 15vh;
+    background-color: #00B3FA;
+}
+
+main li {
+    list-style: none;
+}
+
+main img {
+    width: 40%;
+    vertical-align: middle;
+    margin-left: 10%;
+}

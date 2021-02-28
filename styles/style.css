@@ -6,21 +6,19 @@
 @font-face {
     font-family: "Averta";
     src: url("../fonts/AvertaRegular.otf");
-
 }
 @font-face {
     font-family: "Franklin Gothic Heavy";
     src: url("../fonts/FranklinGothicHeavy.ttf");
-
 }
 
 @media (min-width: 1200px) {
-    body, #div_articles {
+    body {
         width: 70%;
     }
 }
 @media (max-width: 1198.98px){
-    body, #div_articles {
+    body {
         width: 100%;
     }
 }
@@ -34,7 +32,6 @@ body {
     height: 30vh;
     color: white;
     font-family: 'Franklin Gothic Heavy','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #00B3FA;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 2%;
@@ -45,24 +42,6 @@ div h1 {
     text-align: left;
 }
 
-#banner_about, #banner_services {
-    background-image: url('../images/image\(black\).svg');
-}
-
-#banner_history {
-    height: 15vh;
-}
 main {
     text-align: center;
-}
-
-#main_logo {
-    width: 20%;
-}
-
-main p {
-    font-family: 'Averta', Arial, Helvetica, sans-serif;
-    color: #3C3C3C;
-    width: 80%;
-    margin: 0% auto 2% auto;
 }

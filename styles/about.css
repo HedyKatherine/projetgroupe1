@@ -1,0 +1,14 @@
+#banner_about {
+    background-image: url('../images/image\(black\).svg');
+}
+
+#main_logo {
+    width: 20%;
+}
+
+main p {
+    font-family: 'Averta', Arial, Helvetica, sans-serif;
+    color: #3C3C3C;
+    width: 80%;
+    margin: 0% auto 2% auto;
+}
