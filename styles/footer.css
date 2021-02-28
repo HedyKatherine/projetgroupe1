@@ -1,11 +1,10 @@
-
-
 footer {
     background-color: #00B3FA;
     color: white;
     padding: 5% 0%;
     display: flex;
     justify-content: space-between;
+    font-family: 'Averta', Arial, Helvetica, sans-serif;
 }
 
 footer img {

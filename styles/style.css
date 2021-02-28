@@ -1,6 +1,17 @@
 @import 'header.css';
 @import 'footer.css';
 
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/AvertaRegular.otf");
+
+}
+@font-face {
+    font-family: "Franklin Gothic Heavy";
+    src: url("../fonts/FranklinGothicHeavy.ttf");
+
+}
+
 /*Pour une meilleure visibilité : largeur suggérée.*/
 body {
     width: 70%;
