@@ -9,7 +9,9 @@ footer {
 }
 
 footer img {
-    width: 30px;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
     margin-right: 4px;
 }
 
