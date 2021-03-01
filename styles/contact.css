@@ -1,26 +1,17 @@
 @media (min-width: 1200px) {
-    p {
-    width: 20%;
-    }
-
     input, textarea {
         width: 40%;
     }
 }
 @media (max-width: 1198.98px){
-    p {
-    width: 30%;
-    }
-
     input, textarea {
         width: 70%;
     }
 }
 
 #banner_contact {
-    background-image: url('../images/image\(black\).svg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 50%;
+    margin: 0 auto;
 }
 
 p {
@@ -28,7 +19,6 @@ p {
     font-family: 'Franklin Gothic Heavy','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 4%;
     padding-left: 4%;
-    padding-bottom: 20%;
 }
 
 input, textarea {
@@ -42,4 +32,12 @@ input, textarea {
 
 input:focus, textarea:focus {
     outline: 2px inset #3C3C3C;
+}
+
+button {
+    background-color: #00B3FA;
+    padding: 1vh 1vw;
+    border-radius: 10px;
+    color: #3C3C3C;
+    font-family: 'Averta', Arial, Helvetica, sans-serif;
 }
