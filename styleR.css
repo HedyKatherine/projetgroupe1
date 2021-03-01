@@ -65,8 +65,8 @@ header a:hover, .curent {
     display: flex;
     justify-content: space-between;
 }
-.flexF p{
-    font-size: 1.7em;
+.flexF h5{
+    font-size: 1.5em;
     align-self: center;
 }
 .flexF img{
