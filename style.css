@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'averta_demo_peregular';
     src: url('font/avertaregular-webfont.woff') format('woff2'),
@@ -11,6 +12,7 @@ body{
     font-family:averta_demo_peregular ;
     margin: 0px;
     color:#3C3C3C ;
+    
 }
 /*---------------Header & Nav------------*/
 header {
@@ -19,12 +21,10 @@ header {
     color: #3C3C3C;
     font-family: 'Franklin Gothic Heavy','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 header nav {
     width: 80%;
     margin-right: 0%;
 }
-
 header ul {
     text-align: right;
     display: flex;
@@ -33,49 +33,117 @@ header ul {
     margin-right: 4%;
     justify-content: flex-end;
 }
-
 header li {
     padding: 1%;
     list-style: none;
 }
-
 header a {
     text-decoration: none;
     color: #3C3C3C;
 }
-
 header a:hover, .curent {
     color: #00B3FA;
 }
 /*---------------Main-----------*/
-.sectio{
-   margin:0;
-    background-color:#00B3FA ;
-    height:9em;
+section{
+    position: relative;
 }
-.sectio h1{
-    color: white;
-    text-decoration: underline;
-    font-size: 2em;
-    padding-top: 60px;
+.position{
+    position: absolute;
     margin-left: 30px;
+    margin-top: 220px;
 }
-.flexF{
-    margin-top:  40px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 60px;
+.position P{
+    color: white;
+    line-height:0.8em;
+}
+section .size{
+    font-size:60px ;
+    font-weight: bold ;
+}
+section .size1{
+    font-size:25px ;
+}
+.position button{
+    width:50%;
+    margin-left:90px;  
+}
+.flex{
+    position: relative;
+    bottom: 130px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.flexF h5{
-    font-size: 1.5em;
+.flex button{
+background-color: rgb(39, 39, 39);
+color:white;
+height: 50px;
+margin-top: 10px;
+}
+.flex h1{
+    font-weight: bold ;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+h2 {
+    text-align: center; 
+    border-bottom: 2px solid gray; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ h2 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+.container p{
+    font-size:38px ;
+    font-weight: bold ;
+    margin-right: 20px;
+}
+.milieu{
     align-self: center;
 }
-.flexF img{
-    filter: drop-shadow(0px 5px 8px gray);
+.container2{
+    margin-top: 80px;
+    display: flex;
+    justify-content:  space-evenly;
+}
+.item1{
+    width:20%;
+    background-color:#00B3FA;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+}
+.item2{
+    width:20%;
+    border:3px solid#00B3FA;
+    color: #00B3FA;
+    text-align: center;
+    border-radius: 3px;
+}
+.item3{
+    width:20%;
+    border:3px solid#00B3FA;
+    color: #00B3FA;
+    text-align: center;
+    border-radius: 3px;
+}
+.container3{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;  
+}
+.container3 img {
+    filter: drop-shadow(0px 5px 3px gray);
 }
 /*---------------Footer------------*/
+
 footer {
     background-color: #00B3FA;
     color: white;
@@ -85,18 +153,15 @@ footer {
     font-family: 'Averta', Arial, Helvetica, sans-serif;
     margin: 1vh auto 0 auto;
 }
-
 footer img {
     width: 40px;
     height: 40px;
     vertical-align: middle;
     margin-right: 4px;
 }
-
 footer nav {
     width: 100%;
 }
-
 footer ul {
     margin: 0;
     justify-content: space-between;
@@ -104,17 +169,14 @@ footer ul {
     display: flex;
     flex-wrap: wrap;
 }
-
 footer li {
     padding: 1%;
     list-style: none;
 }
-
 footer a {
     color: white;
     text-decoration: none;
 }
-
 footer a:hover {
     color: #3C3C3C;
 }

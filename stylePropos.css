@@ -48,32 +48,37 @@ header a:hover, .curent {
     color: #00B3FA;
 }
 /*---------------Main-----------*/
-.sectio{
-   margin:0;
-    background-color:#00B3FA ;
-    height:9em;
-}
-.sectio h1{
-    color: white;
+.banner h1{
+    color:white;
     text-decoration: underline;
+}
+.decoration{
+    position: absolute;
     font-size: 2em;
     padding-top: 60px;
     margin-left: 30px;
 }
-.flexF{
-    margin-top:  40px;
-    margin-left: 10px;
-    margin-right: 10px;
+.flex{
+    width: 100%;
+    margin-top: 40px;
     margin-bottom: 60px;
     display: flex;
-    justify-content: space-between;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 }
-.flexF h5{
-    font-size: 1.5em;
-    align-self: center;
+#main_logo {
+    width: 30%;
+    padding-right: 100px;
+
 }
-.flexF img{
-    filter: drop-shadow(0px 5px 8px gray);
+main p {
+    font-family: averta_demo_peregula;
+    color: #3C3C3C;
+    text-align: center;
+    font-size: 1.2em;
+    width: 80%;
+    line-height:2em;
 }
 /*---------------Footer------------*/
 footer {
