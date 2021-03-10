@@ -73,10 +73,60 @@ header a:hover, header .curent {
   margin-left: 30px;
 }
 
-.flex {
-  width: 100%;
-  margin-top: 40px;
+main p {
+  font-family: 'Averta', Arial, Helvetica, sans-serif;
+  color: #3C3C3C;
+  width: 80%;
+  margin: 0% auto 2% auto;
+}
+
+#banner_services {
+  background-image: url("../images/banniere-v.jpg");
+}
+
+#div_articles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 49% 49%;
+      grid-template-columns: 49% 49%;
+  margin: 20px;
+  margin-top: 60px;
   margin-bottom: 60px;
+  text-align: center;
+  gap: 4vh calc(3% - 12px);
+  /*application imbrication*/
+}
+
+#div_articles img {
+  width: 80px;
+  height: 80px;
+  margin-left: 170px;
+}
+
+#div_articles a {
+  color: white;
+  background-color: #00B3FA;
+  padding: 1%;
+  margin-top: 100px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 1% auto;
+}
+
+/*fin imbrication*/
+article {
+  border: 4px solid #00B3FA;
+  width: 70%;
+  padding: 2% 0%;
+  margin: 0 auto;
+  height: 50vh;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Heavy','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,23 +137,6 @@ header a:hover, header .curent {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#main_logo {
-  width: 30%;
-  padding-right: 100px;
-}
-
-main p {
-  font-family: averta_demo_peregula;
-  color: #3C3C3C;
-  text-align: center;
-  font-size: 1.2em;
-  width: 80%;
-  line-height: 2em;
 }
 
 /*---------------Footer------------*/
@@ -119,7 +152,7 @@ footer {
           justify-content: space-between;
   font-family: 'Averta', Arial, Helvetica, sans-serif;
   margin: 1vh auto 0 auto;
-  /*application imbrication*/
+  /* application imbrication*/
 }
 
 footer img {
@@ -157,8 +190,8 @@ footer a {
 }
 
 footer a:hover {
-  color: #472b2b;
+  color: #3C3C3C;
 }
 
 /*fin imbrication*/
-/*# sourceMappingURL=stylepropos.css.map */
+/*# sourceMappingURL=stylesservices.css.map */

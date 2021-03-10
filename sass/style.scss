@@ -1,0 +1,199 @@
+/*import fichier varibales.Scss*/
+@import "variables";
+@font-face {
+    font-family: 'averta_demo_peregular';
+    src: url('font/avertaregular-webfont.woff') format('woff2'),
+         url('font/avertaregular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*---------------Global------------*/
+
+body{
+    font-family:averta_demo_peregular ;
+    margin: 0px;
+    color:$primary ;
+    max-width: 100%;
+}
+/*---------------Header & Nav------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    color: $myColor;
+    font-family: 'Franklin Gothic Heavy','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/*application imbrication*/
+ nav {
+    width: 80%;
+    margin-right: 0%;
+}
+ ul {
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    margin-right: 4%;
+    justify-content: flex-end;
+}
+ li {
+    padding: 1%;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: $myColor;
+}
+ a:hover, .curent {
+    color: $colorDesign;
+}
+}
+/*fin imbrication*/
+/*---------------Main-----------*/
+section{
+    position: relative;
+    /*application imbrication*/
+    .position{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 220px;
+        P{
+        color: white;
+        line-height:0.8em;
+}
+}
+    .size{
+    font-size:60px ;
+    font-weight: bold ;
+}
+    .size1{
+    font-size:25px ;
+}
+}
+/*fin imbrication*/
+.position button{
+    width:50%;
+    margin-left:90px;  
+}
+.flex{
+    position: relative;
+    bottom: 130px;
+    display: flex;
+    justify-content: space-around;
+    /*application imbrication*/
+    button{
+background-color: rgb(39, 39, 39);
+color:white;
+height: 50px;
+margin-top: 10px;
+}
+     h1{
+    font-weight: bold ;
+    color: white;
+}
+}
+/*fin imbrication*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /*application imbrication*/
+    p{
+        font-size:38px ;
+        font-weight: bold ;
+        margin-right: 20px;
+    }
+  }
+  /*fin imbrication*/
+h2 {
+    text-align: center; 
+    border-bottom: 2px solid gray; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    /*application imbrication*/
+    span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+}
+/*fin imbrication*/
+
+.milieu{
+    align-self: center;
+}
+.container2{
+    margin-top: 80px;
+    display: flex;
+    justify-content:  space-evenly;
+}
+/*mixine appliqué sur .item2 et .item3*/
+@mixin item {
+    width:20%;
+    border:3px solid $colorDesign;
+    color: $colorDesign;
+    text-align: center;
+    border-radius: 3px;
+}
+.item1{
+    width:20%;
+    background-color:#00B3FA;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+}
+.item2{
+    @include item
+}
+.item3{
+    @include item
+}
+.container3{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-around;  
+     /*application imbrication*/
+    img {
+        filter: drop-shadow(0px 5px 3px gray);
+}
+}
+/*---------------Footer------------*/
+
+footer {
+    background-color: $colorDesign;
+    color: white;
+    padding: 5% 0%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Averta', Arial, Helvetica, sans-serif;
+    margin: 1vh auto 0 auto;
+    /*application imbrication*/
+    img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+     nav {
+    width: 100%;
+}
+    ul {
+    margin: 0;
+    justify-content: space-between;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+    li {
+    padding: 1%;
+    list-style: none;
+}
+    a {
+    color: white;
+    text-decoration: none;
+}
+    a:hover {
+    color: $myColor;
+}
+}
+/*fin imbrication*/

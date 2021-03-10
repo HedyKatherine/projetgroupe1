@@ -1,0 +1,157 @@
+/*import fichier variables .scss*/
+@import "variables";
+@font-face {
+    font-family: 'averta_demo_peregular';
+    src: url('font/avertaregular-webfont.woff') format('woff2'),
+         url('font/avertaregular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*---------------Global------------*/
+body{
+    font-family:averta_demo_peregular ;
+    margin: 0px;
+    color:$primary ;
+}
+/*---------------Header & Nav------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    color: $myColor;
+    font-family: 'Franklin Gothic Heavy','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      /*application imbrication*/
+     nav {
+    width: 80%;
+    margin-right: 0%;
+}
+
+     ul {
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    margin-right: 4%;
+    justify-content: flex-end;
+}
+
+    li {
+    padding: 1%;
+    list-style: none;
+}
+
+     a {
+    text-decoration: none;
+    color: #3C3C3C;
+}
+
+     a:hover, .curent {
+    color: $colorDesign;
+}
+}
+/*fin imbrication*/
+/*---------------Main-----------*/
+.banner h1{
+    color:white;
+    text-decoration: underline;
+}
+.decoration{
+    position: absolute;
+    font-size: 2em;
+    padding-top: 60px;
+    margin-left: 30px;
+}
+main p {
+    font-family: 'Averta', Arial, Helvetica, sans-serif;
+    color: $myColor;
+    width: 80%;
+    margin: 0% auto 2% auto;
+}
+
+#banner_services {
+    background-image: url('../images/banniere-v.jpg');
+}
+
+#div_articles {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    margin: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    gap: 4vh calc(3% - 12px);
+    /*application imbrication*/
+    img {
+        width: 80px;
+        height: 80px;
+        margin-left: 170px;
+    }  
+    a {
+        color: white;
+        background-color: $colorDesign;
+        padding: 1%;
+        margin-top:100px;
+        border-radius: 8px;
+        text-decoration:none;
+        margin: 1% auto;
+    }
+}
+/*fin imbrication*/
+article {
+    border: 4px solid $colorDesign;
+    width: 70%;
+    padding: 2% 0%;
+    margin: 0 auto;
+    height: 50vh;
+}
+h2 {
+    font-family: 'Franklin Gothic Heavy','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*---------------Footer------------*/
+footer {
+    background-color: $colorDesign;
+    color: white;
+    padding: 5% 0%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Averta', Arial, Helvetica, sans-serif;
+    margin: 1vh auto 0 auto;
+    /* application imbrication*/
+     img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+     nav {
+    width: 100%;
+}
+
+     ul {
+    margin: 0;
+    justify-content: space-between;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+     li {
+    padding: 1%;
+    list-style: none;
+}
+
+     a {
+    color: white;
+    text-decoration: none;
+}
+
+     a:hover {
+    color: $myColor;
+}
+}
+/*fin imbrication*/
